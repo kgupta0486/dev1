@@ -27,6 +27,6 @@ rescue  MsRestAzure::AzureOperationError =>e
         Chef::Log.error("Error Response code:" +error_response["code"])
         Chef::Log.error("Error Response message:" +error_response["message"])
       else
-        Chef::Log.error("Error:"+e.inspect)
+        Chef::Log.error("Error: #{e.inspect}")
       end
 end
